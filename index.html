@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu</title>
+    <style>
+        /* .card {
+            width: 200px;
+            height: 200px;
+            background: #07182E;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            place-content: center;
+            place-items: center;
+            overflow: hidden;
+            border-radius: 30px;
+        } */
+        
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 700px;
+        }
+        
+        .card h2 {
+            z-index: 1;
+            color: rgba(10, 20, 17, 0.986);
+            background-image: linear-gradient(200deg, rgb(18, 0, 177), rgb(217, 255, 0));
+            border-radius: 30px;
+            font-size: 10em;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+            height: 350%;
+            animation: rotBGimg 3s linear infinite;
+            transition: all 0.2s linear;
+        }
+        
+        @keyframes rotBGimg {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .card::after {
+            content: '';
+            position: absolute;
+            background: #07182e;
+            inset: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Bansos</h2>
+    </div>
+</body>
+
+</html>
